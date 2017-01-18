@@ -5,12 +5,12 @@ module.exports = (client, callback) => {
   client.commands = {};
 
   client.emote = { 
-    "default": "http://i.imgur.com/gahpkzl.png", 
-    "serious": 
-    "http://i.imgur.com/a30T4gX.png", 
-    "embarassed": "http://i.imgur.com/Net4Qyq.png", 
-    "flustered": "http://i.imgur.com/VEWDYD5.png", 
-    "smile": "http://puu.sh/tqzRZ/fc8a41a814.jpg" 
+    "default": "http://puu.sh/tqBtl/d35fd4e6fc.jpg", 
+    "serious": "http://puu.sh/tqBiv/846aed72cf.jpg", 
+    "embarassed": "http://puu.sh/tqBC2/94be61d097.jpg", 
+    "flustered": "http://puu.sh/tqBAc/47ee634e85.jpg", 
+    "annoyed": "http://puu.sh/tqBwL/c2157fc477.jpg",
+    "smile": "http://puu.sh/tqByH/9815580e26.jpg" 
   }
 
   loadTime = Date.now();
