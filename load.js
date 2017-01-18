@@ -10,7 +10,7 @@ module.exports = (client, callback) => {
     "http://i.imgur.com/a30T4gX.png", 
     "embarassed": "http://i.imgur.com/Net4Qyq.png", 
     "flustered": "http://i.imgur.com/VEWDYD5.png", 
-    "smile": "http://i.imgur.com/lvSSKGX.png" 
+    "smile": "http://puu.sh/tqzRZ/fc8a41a814.jpg" 
   }
 
   loadTime = Date.now();
