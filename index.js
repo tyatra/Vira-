@@ -76,6 +76,7 @@ client.load(client, () => {
         message.send("Pfft What about that shitty Panda? Won't you rather talk about me instead?", "annoyed");
       } else if (content.match(/what about anthony,? jeanne|anthony,? jeanne|you know anthony,? jeanne/g)) {
         message.send("I only care about our current Guild Master Charlie, no one else, not even that traitor", "annoyed");
+      }
       return;
     }
     content = message.content.slice(client.prefix.length);
