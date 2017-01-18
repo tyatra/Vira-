@@ -51,7 +51,7 @@ client.load(client, () => {
     message.send = function (desc, emotion) {
       embed = client.embed;
       desc = desc.slice(0, 1).toUpperCase() + desc.slice(1);
-      embed.description = desc.replace(/captain/gi, 'captain' + client.name);
+      embed.description = desc.replace(/senpai/gi, 'captain' + client.name);
       if (emotion) embed.thumbnail = { url: client.emote[emotion] };
       else {
         if (Math.random() > 0.5) embed.thumbnail = { url: client.emote["default"] };
@@ -67,7 +67,7 @@ client.load(client, () => {
       } else if (content.match(/it's ok,? jeanne/g)) {
         message.send("I'll try to bring us a victory next time, leader");
       } else if (content.match(/peek a boo jeanne/g)) {
-        message.send("DONT MAKE ME BURN YOU LIKE THAT TOMMYCAT", "fgoface");
+        message.send("DONT MAKE ME BURN YOU LIKE THAT TOMMYCAT", "annoyed");
       } else if (content.match(/\bright,? jeanne\b/g)) {
         message.send("As you say leader, but Charlie is always right in the end.");
       } else if (content.match(/good job,? jeanne|gj,? jeanne|nice,? jeanne/g)) {
