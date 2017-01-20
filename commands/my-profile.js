@@ -1,6 +1,6 @@
 exports.func = (user, obj) => {
   embed = {
-    title: "FGO Profile for " + user.username,
+    title: "GBF Profile for " + user.username,
     fields: [
       {
         name: "IGN",
@@ -18,12 +18,12 @@ exports.func = (user, obj) => {
   return embed;
 }
 exports.exec = (client, message, content, args) => {
-  message.send("Surely senpai, please wait a moment");
+  message.send("Understood leader, please wait a moment");
   func = this.func;
   if (args) {
 
   }
-  client.db.get('fgoProfile_' + message.author.id, function (err, result) {
+  client.db.get('gbfProfile_' + message.author.id, function (err, result) {
     if (args || message.attachments.first()) {
       if (result) obj = JSON.parse(result);
       else obj = {};
@@ -36,7 +36,7 @@ exports.exec = (client, message, content, args) => {
         obj.support = img.url;
       }
       result = JSON.stringify(obj);
-      client.db.set('fgoProfile_' + message.author.id, result, function() {
+      client.db.set('gbfProfile_' + message.author.id, result, function() {
         message.channel.sendMessage('Profile saved successfully', {embed: client.commands["my profile"].func(message.author, obj)});
       });
     } else {
@@ -44,7 +44,7 @@ exports.exec = (client, message, content, args) => {
         obj = JSON.parse(result);
         message.channel.sendMessage('', {embed: func(message.author, obj)});
       } else {
-        message.channel.sendMessage("Profile not found senpai, attach an argument to create one");
+        message.channel.sendMessage("Profile not found leader, attach an argument to create one");
       }
     }
   })
