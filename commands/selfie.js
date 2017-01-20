@@ -3,7 +3,7 @@ module.exports = {
   exec: (client, message, content, args) => {
     message.send("Really Leader? Please wait...");
     request({
-      url: 'https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=jeanne_d%27arc_(granblue_fantasy)',
+      url: 'https://danbooru.donmai.us/posts.json?random=true&limit=1&tags=jeanne_d%27arc_%28granblue_fantasy%29',
       json: true
     }, function (err, temp, body) {
       if (!err && body.length > 0 && body[0].file_url) {
